@@ -14,25 +14,41 @@ list_of_files = {
 
     # src represents entire source code
     "src/__init__.py",
+
+    # components folder contains all the components required in machine learning like model training, evaluation.
     "src/components/__init__.py",
     "src/components/data_ingestion.py",
     "src/components/data_transformation.py",
     "src/components/model_trainer.py",
     "src/components/model_evaluation.py",
+
+
+    # contains different pipelines
     "src/pipeline/__init__.py",
     "src/pipeline/training_pipeline.py",
     "src/pipeline/prediction_pipline.py",
-    "src/utils/__init__.py"
-    "src/utils/utils.py",
-    "src/logger/logging.py",
-    "src/exception/exception",
 
+    # contain utility
+    "src/utils/__init__.py",
+    "src/utils/utils.py",
     
+    # logs (history) are stored here
+    "src/logger/logging.py",
+    # exceptions are stored here
+    "src/exception/exception.py",
+
+
+    # for testing, it contains two type of testings
     "tests/unit/__init__.py",
     "tests/integration/__init__.py",
+
+    # can initialize the setput using this
     "init_setup.sh",
+
+    # this store required libraries etc.
     "requirements.txt",
     "requirements_dev.txt",
+    
     "setup.py",
     "setup.config",
     "pyproject.toml",
